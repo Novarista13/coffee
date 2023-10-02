@@ -26,6 +26,7 @@
 }
 
 /* Hero Section */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 .hero-section {
   background-image: url(./images/hero3.jpg);
@@ -41,11 +42,67 @@
   position: absolute;
   top: 60%;
   left: 5%;
-  color: #523116;
+  color: #000;
   font-size: 50px;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: normal;
+}
+
+/* Coffee Card Section */
+.coffee-card-section {
+  margin-top: 50px;
+}
+
+.coffee-card-container {
+  max-width: none !important;
+}
+
+.coffee-card-row {
+  width: 80%;
+  margin: 0 auto !important;
+}
+
+.coffee-card {
+  width: 339.836px;
+  height: 350px !important;
+  flex-shrink: 0;
+  border-radius: 20px !important;
+  background: white !important;
+  color: #523116 !important;
+}
+
+.coffee-card-title {
+  padding: 20px;
+}
+
+.coffee-card-text {
+  padding: 15px;
+  padding-top: 0;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; 
+  letter-spacing: 0.019px;
+}
+
+/* Featured Section */
+
+.featured-section {
+  margin: 100px auto;
+  text-align: left;
+  color: #523116;
+}
+
+.featured-slide {
+  margin: 50px 10px;
+}
+
+.featured-slide-box {
+  margin: 20px;
+  text-align: center;
 }
 
 /* Footer Section */
@@ -55,7 +112,6 @@ div .footer-section {
   background-color: #523116;
   height: 100%;
 }
-
 
 .footer-text {
   padding: 30px;

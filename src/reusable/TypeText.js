@@ -2,14 +2,15 @@ import Typewriter from "typewriter-effect";
 import React from "react";
 import "../App.css";
 
-function Text() {
+function Text({text, loop, delay}) {
   return (
     <Typewriter
       className="type-writer"
       options={{
-        strings: ["Enhance your coffee experience..."],
+        strings: text,
         autoStart: true,
-        loop: true,
+        loop: loop,
+        delay: delay,
         deleteSpeed: 30,
       }}
     />
