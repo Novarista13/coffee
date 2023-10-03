@@ -23,13 +23,14 @@
   margin: 5px 25px;
   color: white !important;
   font-size: 18px !important;
+  text-decoration: none;
 }
 
 /* Hero Section */
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 .hero-section {
-  background-image: url(./images/hero3.jpg);
+  background-image: url(./images/home-img/hero3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -44,7 +45,7 @@
   left: 5%;
   color: #000;
   font-size: 50px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -52,7 +53,7 @@
 
 /* Coffee Card Section */
 .coffee-card-section {
-  margin-top: 50px;
+  margin: 50px auto;
 }
 
 .coffee-card-container {
@@ -84,7 +85,7 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; 
+  line-height: 30px;
   letter-spacing: 0.019px;
 }
 
@@ -105,9 +106,71 @@
   text-align: center;
 }
 
+/* About Section */
+
+.about-hero-section {
+  background-image: url(./images/about-img/about1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+
+.about-hero-text {
+  position: absolute;
+  top: 48%;
+  left: 5%;
+  padding: 0 10px;
+  padding-right: 40px !important;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+}
+
+/* Locations Section */
+
+.location-map {
+  position: relative;
+}
+
+.location-map-text {
+  position: absolute;
+  top: 83%;
+  width: 100%;
+  height: 100px;
+  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 20px;
+}
+
+.location-map-text p {
+  padding-top: 15px;
+}
+
+.location-shops {
+  margin-top: 100px;
+}
+
+.location-shops-box {
+  margin: 30px auto ;
+}
+
+.shop-button {
+  border: 0;
+  border-radius: 15px;
+  height: 30px;
+  width: 100px;
+  font-size: 15px;
+  color: white;
+  background: #523116 !important;
+}
+
 /* Footer Section */
 div .footer-section {
-  margin-top: 50px;
   max-width: none;
   background-color: #523116;
   height: 100%;
