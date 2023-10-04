@@ -1,11 +1,6 @@
 .app {
   text-align: center;
-  background: linear-gradient(
-    87.4deg,
-    rgb(255, 241, 165) 1.9%,
-    rgb(200, 125, 76) 49.7%,
-    rgb(83, 54, 54) 100.5%
-  );
+  background: #E0B073;
 }
 
 /* Navbar Section */
@@ -16,7 +11,7 @@
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171);
   backdrop-filter: blur(15px);
   background: rgba(0, 0, 0, 0.7);
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav-links {
@@ -167,6 +162,79 @@
   font-size: 15px;
   color: white;
   background: #523116 !important;
+}
+
+/* Single Shop Page */
+
+.shop-hero-section {
+  background-image: url(./images/shops/shop3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  color: white;
+}
+
+.shop-hero-text {
+  position: absolute;
+  top: 30%;
+  left: 42%;
+}
+
+.shop-hero-img {
+  margin-bottom: 40px;
+}
+
+.shop-hero-text h2 {
+  font-weight: 600;
+}
+
+.shop-arrow-down {
+  margin-top: 60px;
+}
+
+/* Shop Info Page */
+
+.shop-info-section {
+  text-align: left;
+  margin: 60px auto;
+}
+
+.shop-info-section h2 {
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.shop-vibe {
+  margin: 35px auto;
+}
+
+.shop-info-section h3 {
+  font-weight: 600;
+}
+
+.shop-info-section ul {
+  margin: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.shop-info-section li {
+  font-size: 25px;
+}
+
+.shop-popular-items {
+  margin: 35px auto;
+}
+
+.shop-popular-items div.row {
+  margin: 30px auto;
+}
+.shop-popular-items div.col {
+  text-align: center;
 }
 
 /* Footer Section */
