@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import coffee from "../images/coffee.svg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -22,12 +23,25 @@ export default function Footer() {
           Co
         </Col>
         <Col lg={3} sm={4} xs={6} className="footer-links">
-          About <br />
-          Locations <br />
-          Recipes <br />
-          Contact
+          <Link className="footer-links" to="/home">
+            Home
+          </Link>
           <br />
-          Login
+          <Link className="footer-links" to="/about">
+            About
+          </Link>
+          <br />
+          <Link className="footer-links" to="/locations">
+            Locations
+          </Link>
+          <br />
+          <Link className="footer-links" to="/recipes">
+            Recipes
+          </Link>
+          <br />
+          <Link className="footer-links" to="/contact">
+            Contact
+          </Link>
         </Col>
         <Col lg={3} sm={12} xs={6} className="footer-note mt-lg-5">
           <div className="footer-note-text">

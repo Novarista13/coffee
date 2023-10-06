@@ -26,7 +26,7 @@ export const shopInfo = (shop) => {
         vibe: ["Mystical", "Tranquil", "Artistic"],
         location: " 789 Wonderland Boulevard, Mystica",
         hours: "6:30 AM - 4:30 PM (Mon-Fri)",
-        popularItems: ["Magic Elixir Espresso, Gnome's Garden Quiche"],
+        popularItems: ["Magic Elixir Espresso", "Gnome's Garden Quiche"],
       };
     case "espresso delights":
       return {
@@ -35,7 +35,7 @@ export const shopInfo = (shop) => {
         vibe: ["Sky-High", "Contemporary", "Relaxing"],
         location: "101 Cloud Street, Skytopia",
         hours: "7:00 AM - 3:00 PM (Wed-Mon)",
-        popularItems: ["Nimbus Cappuccino, Celestial Croissant"],
+        popularItems: ["Nimbus Cappuccino", "Celestial Croissant"],
       };
     case "mocha muse":
       return {
@@ -44,7 +44,7 @@ export const shopInfo = (shop) => {
         vibe: [" Magical", "Lively", "Charming"],
         location: " 234 Whimsy Lane, Fairyland",
         hours: "9:00 AM - 7:00 PM (Thu-Tue)",
-        popularItems: ["Pixie Potion Cold Brew, Enchanted Berry Pie"],
+        popularItems: ["Pixie Potion Cold Brew", "Enchanted Berry Pie"],
       };
     case "bean bliss bistro":
       return {
