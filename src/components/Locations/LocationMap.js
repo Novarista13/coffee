@@ -10,9 +10,9 @@ export default function LocationMap() {
         height="550"
         title="yangon"
         style={{ border: 0 }}
-        allowfullscreen=""
+        allowFullScreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
 
       <div className="location-map-text">

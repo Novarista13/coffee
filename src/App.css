@@ -1,6 +1,6 @@
 .app {
   text-align: center;
-  background: #E0B073;
+  background: #e0b073;
 }
 
 /* Navbar Section */
@@ -11,6 +11,7 @@
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171);
   backdrop-filter: blur(15px);
   background: rgba(0, 0, 0, 0.7);
+  top: 0px;
   z-index: 2;
 }
 
@@ -151,7 +152,7 @@
 }
 
 .location-shops-box {
-  margin: 30px auto ;
+  margin: 30px auto;
 }
 
 .shop-button {
@@ -180,7 +181,7 @@
 .shop-hero-text {
   position: absolute;
   top: 30%;
-  left: 42%;
+  left: 35%;
 }
 
 .shop-hero-img {
@@ -235,6 +236,127 @@
 }
 .shop-popular-items div.col {
   text-align: center;
+}
+
+/* Recipes Section */
+
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Lato&display=swap");
+
+.recipes-hero-section {
+  font-family: "Aladin", cursive !important;
+  font-family: "Lato", sans-serif;
+  background-image: url(./images/recipes/recipes-hero1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  color: white;
+}
+
+.recipes-hero-text {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.recipes-hero-text h1 {
+  font-size: 66px;
+}
+
+.recipes-hero-text h2 {
+  font-size: 44px;
+}
+
+.recipes-button {
+  border: 0;
+  border-radius: 25px;
+  height: 60px;
+  width: 250px;
+  font-size: 35px;
+  color: #523116 !important;
+  background: white;
+  position: absolute;
+  bottom: 8%;
+  left: 42%;
+}
+
+/* Coffee Material Section */
+
+.coffee-material-section {
+  margin: 100px auto;
+}
+
+.coffee-material-section h2,
+.raw-materials-section h2 {
+  font-weight: 600;
+}
+
+.form-check-input {
+  background-color: #e0b073 !important;
+  color: #523116;
+  border: 2px solid #523116 !important;
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem #a27149 !important;
+  outline: 0 !important;
+}
+
+.checkbox-row {
+  margin: 30px 350px !important;
+}
+
+.checkbox-col {
+  font-weight: 500;
+  text-align: left;
+}
+
+.materials {
+  padding: 5px;
+}
+
+/* Raw Material Section */
+
+.raw-materials-container {
+  text-align: left;
+}
+
+.type-section {
+  margin: 40px auto;
+}
+
+.raw-material-row {
+  margin: 10px 30px;
+}
+
+.drink-button {
+  border: 0;
+  border-radius: 15px;
+  height: 30px;
+  width: 150px;
+  font-size: 15px;
+  color: white;
+  margin: 50px auto;
+  background: #523116 !important;
+}
+
+/* Result page */
+
+.recipes-result-section h2 {
+  font-family: "Aladin", cursive !important;
+  font-family: "Lato", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.recipes-result-title {
+  text-align: left;
+}
+
+.recipes-result-col {
+margin: 40px auto !important;
 }
 
 /* Footer Section */

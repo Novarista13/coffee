@@ -1,12 +1,13 @@
 import ShopHero from "./ShopHero";
 import ShopInfoPanel from "./ShopInfoPanel";
-
+import { animateScroll as scroll } from "react-scroll";
 
 function Shop() {
   return (
     <div className="shop-page">
-     <ShopHero />
-     <ShopInfoPanel />
+      {scroll.scrollToTop()}
+      <ShopHero />
+      <ShopInfoPanel />
     </div>
   );
 }

@@ -4,8 +4,8 @@ import Container from "react-bootstrap/Container";
 import Marquee from "react-fast-marquee";
 import { shopData } from "../../data/shops/shopData";
 import { shopImage } from "../../data/shops/shopImage";
-import { recipesData } from "../../data/recipes/recipesData";
-import { recipesImage } from "../../data/recipes/recipesImage";
+import { productsData } from "../../data/products/productsData";
+import { productsImage } from "../../data/products/productsImage";
 
 export default function Featured() {
   return (
@@ -16,7 +16,7 @@ export default function Featured() {
         </h2>
         <h5>
           <Text
-            text="We are the Rochester Coffee Corner and our mission is to enhance your coffee experience and guide you through the world of Rochester coffee shops. Use our site to find coffee shops in Rochester, check out new blends, and experiment with recipes at home."
+            text="We are the Rochester Coffee Corner and our mission is to enhance your coffee experience and guide you through the world of Rochester coffee shops. Use our site to find coffee shops in Rochester, check out new blends, and experiment with products at home."
             loop={false}
             delay={30}
           />
@@ -46,7 +46,7 @@ export default function Featured() {
           </Marquee>
         </div>
         <div className="featured-slide">
-          <h4>Featured Recipes</h4>
+          <h4>Featured products</h4>
           <Marquee
             gradient={false}
             speed={60}
@@ -55,16 +55,16 @@ export default function Featured() {
             play={true}
             direction="left"
           >
-            {recipesData.map((recipes, id) => (
+            {productsData.map((products, id) => (
               <div className="featured-slide-box" key={id}>
                 <img
-                  className="recipes-image"
-                  src={recipesImage(recipes)}
-                  alt={recipes}
+                  className="products-image"
+                  src={productsImage(products)}
+                  alt={products}
                   width={150}
                   height={150}
                 />
-                <p>{recipes}</p>
+                <p>{products}</p>
               </div>
             ))}
           </Marquee>

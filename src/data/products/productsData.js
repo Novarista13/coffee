@@ -1,4 +1,4 @@
-export const recipesData = [
+export const productsData = [
   "Salted Mocha",
   "Vanilla Frappuccino",
   "Cinnamon Latte",

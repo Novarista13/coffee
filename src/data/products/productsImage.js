@@ -1,8 +1,8 @@
-import coffee1 from "../../images/recipes/coffee1.svg";
+import coffee1 from "../../images/products/coffee1.svg";
 
-export const recipesImage = (recipes) => {
-  const recipesID = recipes.toLowerCase();
-  switch (recipesID) {
+export const productsImage = (products) => {
+  const productsID = products.toLowerCase();
+  switch (productsID) {
   case "salted mocha":
     return coffee1;
   case "vanilla frappuccino":
