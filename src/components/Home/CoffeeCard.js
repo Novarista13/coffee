@@ -15,11 +15,10 @@ export default function CoffeeCard() {
             <Row className="coffee-card-row">
               {coffeeData.map((coffee, id) =>
                 id > 2 ? null : (
-                  <Col key={id}>
+                  <Col lg={4} md={6} key={id}>
                     <Card
-                      className="coffee-card"
+                      className="coffee-card mx-auto"
                       style={{ width: "18rem" }}
-                      
                     >
                       <Card.Body>
                         <Card.Title className="coffee-card-title">
@@ -39,11 +38,10 @@ export default function CoffeeCard() {
             <Row className="coffee-card-row">
               {coffeeData.map((coffee, id) =>
                 id <= 2 ? null : id > 5 ? null : (
-                  <Col key={id}>
+                  <Col lg={4} md={6} key={id}>
                     <Card
-                      className="coffee-card"
+                      className="coffee-card mx-auto"
                       style={{ width: "18rem" }}
-                      
                     >
                       <Card.Body>
                         <Card.Title className="coffee-card-title">
@@ -63,11 +61,10 @@ export default function CoffeeCard() {
             <Row className="coffee-card-row">
               {coffeeData.map((coffee, id) =>
                 id <= 5 ? null : (
-                  <Col  key={id}>
+                  <Col lg={4} md={6} key={id}>
                     <Card
-                      className="coffee-card"
+                      className="coffee-card mx-auto"
                       style={{ width: "18rem" }}
-                    
                     >
                       <Card.Body>
                         <Card.Title className="coffee-card-title">

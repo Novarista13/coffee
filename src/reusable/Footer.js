@@ -7,37 +7,29 @@ export default function Footer() {
   return (
     <Container className="footer-section">
       <Row className="footer-text">
-        <Col lg={8} md={12}>
-          <Row>
-            <Col lg={7} md={12}>
-              <Row>
-                <Col>
-                  <img
-                    width={130}
-                    className="footer-logo"
-                    src={coffee}
-                    alt="footer-logo"
-                  />
-                </Col>
-                <Col className="site-name">
-                  Nova <br />
-                  Coffee <br />
-                  Corner <br />
-                  Co
-                </Col>
-              </Row>
-            </Col>
-            <Col className="footer-links">
-              About <br />
-              Locations <br />
-              Recipes <br />
-              Contact
-              <br />
-              Login
-            </Col>
-          </Row>
+        <Col lg={3} sm={4} xs={6}>
+          <img
+            width={130}
+            className="footer-logo"
+            src={coffee}
+            alt="footer-logo"
+          />
         </Col>
-        <Col className="footer-note">
+        <Col lg={3} sm={4} xs={6} className="site-name">
+          Nova <br />
+          Coffee <br />
+          Corner <br />
+          Co
+        </Col>
+        <Col lg={3} sm={4} xs={6} className="footer-links">
+          About <br />
+          Locations <br />
+          Recipes <br />
+          Contact
+          <br />
+          Login
+        </Col>
+        <Col lg={3} sm={12} xs={6} className="footer-note mt-lg-5">
           <div className="footer-note-text">
             This Website is coded by Novarista
           </div>
