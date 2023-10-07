@@ -1,12 +1,12 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { productsData } from "../../data/products/productsData";
 import { productsImage } from "../../data/products/productsImage";
 import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 import { useContext } from "react";
 import { RecipesContext } from "../../Contexts/RecipesContext";
+import { recipesInfo } from "../../data/recipes/RecipesResult";
 
 export default function RecipesResult() {
   const { recipesMaterial } = useContext(RecipesContext);
@@ -21,21 +21,23 @@ export default function RecipesResult() {
         </div>
 
         <Row>
-          {productsData.map(
-            (products, id) =>
-              id < 6 && (
+          {recipesInfo(recipesMaterial ? recipesMaterial : []).map(
+            (items, id) =>
+              items ? (
                 <Col lg={4} md={6} className="recipes-result-col" key={id}>
                   <div className="recipes-result-image">
                     <img
-                      className="products-image"
-                      src={productsImage(products)}
-                      alt={products}
+                      className="items-image"
+                      src={productsImage(items)}
+                      alt={items}
                       width={150}
                       height={150}
                     />
-                    <p>{products}</p>
+                    <p>{items}</p>
                   </div>
                 </Col>
+              ) : (
+                <h5 className="mt-5"> You can't make a drink only with these things.</h5>
               )
           )}
         </Row>
