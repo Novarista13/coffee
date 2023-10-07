@@ -10,7 +10,14 @@ export default function RecipesHero() {
         <h1>WELCOME TO THE LAB</h1>
         <h2>See What You Can Make</h2>
         <Link to="/recipes/1" aria-label="Recipes Panel">
-          <button className="recipes-button">Let's Get Started</button>
+          <button
+            className="recipes-button"
+            onClick={() => {
+              localStorage.removeItem("recipesMaterial");
+            }}
+          >
+            Let's Get Started
+          </button>
         </Link>
       </div>
     </div>

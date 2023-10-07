@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
 import arrowDown from "../../images/recipes/arrow-down.svg";
 import { animateScroll as scroll } from "react-scroll";
+import { useContext } from "react";
 import {
   rawTypes,
   coffeeTypes,
@@ -12,10 +13,14 @@ import {
   milkTypes,
   otherTypes,
 } from "../../data/recipes/rawMaterialsData";
+import { RecipesContext } from "../../Contexts/RecipesContext";
 
 export default function RawMaterials() {
   let material;
   scroll.scrollToTop();
+
+  const { recipesMaterial, setRecipesMaterial } = useContext(RecipesContext);
+
   return (
     <div className="raw-materials-section">
       <Container className="raw-materials-container ps-5">
@@ -59,7 +64,19 @@ export default function RawMaterials() {
                       name={item}
                       className="raw-mateirals"
                       type={"checkbox"}
+                      checked={recipesMaterial.includes(item)}
                       id={item}
+                      onChange={(e) => {
+                        e.target.checked
+                          ? setRecipesMaterial([...recipesMaterial, item])
+                          : setRecipesMaterial(
+                              recipesMaterial.filter((i) => i !== item)
+                            );
+                        localStorage.setItem(
+                          "recipesMaterial",
+                          JSON.stringify(recipesMaterial)
+                        );
+                      }}
                     />
                   </Col>
                 ))}

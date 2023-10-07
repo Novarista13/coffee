@@ -1,4 +1,5 @@
 import "./App.css";
+import RecipesContextProvider from "./Contexts/RecipesContext";
 import SingleShopProvider from "./Contexts/SingleShopContext";
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
@@ -17,17 +18,19 @@ function App() {
     <div className="app">
       <NavBar />
       <SingleShopProvider>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/locations" element={<Locations />} />
-          <Route path="/locations/shop" element={<Shop />} />
-          <Route path="/recipes" element={<RecipesHero />} />
-          <Route path="/recipes/1" element={<CoffeeMaterial />} />
-          <Route path="/recipes/2" element={<RawMaterials />} />
-          <Route path="/recipes/3" element={<RecipesResult />} />
-        </Routes>
+        <RecipesContextProvider>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/locations" element={<Locations />} />
+            <Route path="/locations/shop" element={<Shop />} />
+            <Route path="/recipes" element={<RecipesHero />} />
+            <Route path="/recipes/1" element={<CoffeeMaterial />} />
+            <Route path="/recipes/2" element={<RawMaterials />} />
+            <Route path="/recipes/3" element={<RecipesResult />} />
+          </Routes>
+        </RecipesContextProvider>
       </SingleShopProvider>
       <Footer />
     </div>

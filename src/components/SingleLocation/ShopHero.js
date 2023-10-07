@@ -8,6 +8,7 @@ import { SingleShopContext } from "../../Contexts/SingleShopContext";
 export default function ShopHero() {
   const { shopName } = useContext(SingleShopContext);
   let shop = shopName ? shopName : "Brew Haven";
+  
   return (
     <div className="shop-hero-section">
       <div className="shop-hero-text">
