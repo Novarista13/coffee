@@ -6,29 +6,29 @@ export const coffeeTypes = [
   "Onyx Roast",
   "Classic Dark",
   "Arabica Coffee",
-  "Jamaican",
+  "Instant Coffee",
   "French Truck",
   "Morning Blend",
 ];
 
-export const teaTypes = ["Mate", "Black", "Green", "Matcha"];
+export const teaTypes = ["Mate", "Chai", "Green", "Matcha"];
 
 export const milkTypes = [
-  "Whole",
-  "2%",
-  "Oat",
+  "Steamed Milk",
+  "Milk Foam",
+  "Whipped Cream",
   "Almond",
   "Non Fat",
   "Soy",
-  "Coconut",
+  "Condensed Milk",
   "Chocolate",
 ];
 
 export const otherTypes = [
-  "Cinammon",
-  "Flour",
+  "Maple syrup",
+  "Ice Cream",
   "Sugar",
-  "Oranges",
+  "Irish whiskey",
   "Caramel syrup",
   "Mocha sauce",
   "Vanilla syrup",

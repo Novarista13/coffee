@@ -38,14 +38,18 @@ export default function Footer() {
           <Link className="footer-links" to="/recipes">
             Recipes
           </Link>
-          <br />
-          <Link className="footer-links" to="/contact">
-            Contact
-          </Link>
         </Col>
         <Col lg={3} sm={12} xs={6} className="footer-note mt-lg-5">
           <div className="footer-note-text">
-            This Website is coded by Novarista
+            This Website was coded by{" "}
+            <span
+              style={{ color: "#e6b678", cursor: "pointer" }}
+              onClick={() => {
+                window.open("https://github.com/Novarista13");
+              }}
+            >
+              Novarista
+            </span>
           </div>
         </Col>
       </Row>

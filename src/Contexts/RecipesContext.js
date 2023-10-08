@@ -9,8 +9,6 @@ export default function RecipesContextProvider({ children }) {
     recipes ? recipes : []
   );
 
-  console.log(recipesMaterial);
-
   return (
     <RecipesContext.Provider value={{ recipesMaterial, setRecipesMaterial }}>
       {children}

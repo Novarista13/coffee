@@ -3,10 +3,8 @@ export const coffeeMaterialData = [
   "Kettle",
   "French Press",
   "Microwave",
-  "Chemex",
   "Oven",
   "Coffee Machine",
   "Blender",
-  "Ibrik",
-  "Muffin Pan",
+  "Aeropress",
 ];

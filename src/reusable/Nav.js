@@ -48,13 +48,6 @@ export default function NavBar() {
                 </Link>
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="#">
-                <Link className="nav-links" to="/contact">
-                  Contact
-                </Link>
-              </Nav.Link>
-            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

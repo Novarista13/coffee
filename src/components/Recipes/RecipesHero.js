@@ -12,9 +12,6 @@ export default function RecipesHero() {
         <Link to="/recipes/1" aria-label="Recipes Panel">
           <button
             className="recipes-button"
-            onClick={() => {
-              localStorage.removeItem("recipesMaterial");
-            }}
           >
             Let's Get Started
           </button>

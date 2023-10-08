@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
 import arrowDown from "../../images/recipes/arrow-down.svg";
 import { animateScroll as scroll } from "react-scroll";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import {
   rawTypes,
   coffeeTypes,
@@ -16,10 +16,12 @@ import {
 import { RecipesContext } from "../../Contexts/RecipesContext";
 
 export default function RawMaterials() {
-  let material;
-  scroll.scrollToTop();
-
   const { recipesMaterial, setRecipesMaterial } = useContext(RecipesContext);
+  let material;
+
+  useEffect(() => {
+    scroll.scrollToTop();
+  }, []);
 
   return (
     <div className="raw-materials-section">
