@@ -21,32 +21,24 @@ export default function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto navs">
             <Nav.Item>
-              <Nav.Link href="#">
                 <Link className="nav-links" to="/home">
                   Home
                 </Link>
-              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#">
                 <Link className="nav-links" to="/about">
                   About
                 </Link>
-              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#">
                 <Link className="nav-links" to="/locations">
                   Locations
                 </Link>
-              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#">
                 <Link className="nav-links" to="/recipes">
                   Recipes
                 </Link>
-              </Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
