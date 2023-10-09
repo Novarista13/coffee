@@ -480,5 +480,17 @@ div .footer-section {
 
 .footer-note-text {
   color: white;
-  text-align: center !important;
 }
+
+@media (max-width: 999px) {
+  .footer-note-text {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-note-text {
+    text-align: left !important;
+  }
+}
+

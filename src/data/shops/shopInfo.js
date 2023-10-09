@@ -48,7 +48,7 @@ export const shopInfo = (shop) => {
         vibe: [" Magical", "Lively", "Charming"],
         location: " 234 Whimsy Lane, Fairyland",
         hours: "9:00 AM - 7:00 PM (Thu-Tue)",
-        popularItems: ["Tiramisu Latte", "Gingerbread Latte", "Cinnamon Latte"],
+        popularItems: ["Tiramisu Latte", "Gingerbread Latte", "Cinnamon Cappuccino"],
       };
     case "bean bliss bistro":
       return {
@@ -59,7 +59,7 @@ export const shopInfo = (shop) => {
         hours: "7:30 AM - 4:30 PM (Mon-Sat)",
         popularItems: [
           "Matcha Latte",
-          "Cinnamon Latte",
+          "Cinnamon Cappuccino",
           "Cherry Blossom Latte",
         ],
       };
@@ -211,7 +211,7 @@ export const shopInfo = (shop) => {
         vibe: ["Wonderland", "Playful", "Enchanted"],
         location: "567 Mystic Road, Mythica",
         hours: "10:00 AM - 8:00 PM (Tue-Sun)",
-        popularItems: ["Matcha Latte", "Cinnamon Latte", "Tiramisu Latte"],
+        popularItems: ["Matcha Latte", "Cinnamon Cappuccino", "Tiramisu Latte"],
       };
     default:
       break;
