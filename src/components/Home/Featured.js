@@ -16,7 +16,7 @@ export default function Featured() {
         </h2>
         <h5>
           <Text
-            text="We are the Coffee Nova Corner and our mission is to enhance your coffee experience and guide you through the world of Rochester coffee shops. Use our site to find coffee shops in Rochester, check out new blends, and experiment with products at home."
+            text="We are the Coffee Nova Corner and our mission is to enhance your coffee experience and guide you through the world of Yangon coffee shops. Use our site to find coffee shops in Yangon, check out new blends, and experiment with products at home."
             loop={false}
             delay={30}
           />
