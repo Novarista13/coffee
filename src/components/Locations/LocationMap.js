@@ -17,7 +17,7 @@ export default function LocationMap() {
 
       <div className="location-map-text">
         <p>
-          We are partnered with many coffee shops in the Rochester area. Scroll
+          We are partnered with many coffee shops in the Yangon area. Scroll
           down to see locations, hours, products, and more.
         </p>
         <HashLink to="#shops">
