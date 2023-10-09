@@ -19,6 +19,7 @@ import hotChocolateCoffee from "../../images/recipes/recipes result/hot-chocolat
 import iceCoffee from "../../images/recipes/recipes result/ice-coffee.jpg";
 import instantCoffee from "../../images/recipes/recipes result/instant-coffee.jpg";
 import macchiato from "../../images/recipes/recipes result/macchiato.jpg";
+import caramelMacchiato from "../../images/recipes/recipes result/caramel-macchiato.jpg";
 import latte from "../../images/recipes/recipes result/latte.jpg";
 import mapleCoffee from "../../images/recipes/recipes result/maple-coffee.jpg";
 import matcha from "../../images/recipes/recipes result/matcha.jpg";
@@ -101,7 +102,7 @@ export const recipesImage = (recipes) => {
     case "Café con Leche":
       return cafeConLeche;
     case "Caramel Macchiato":
-      return;
+      return caramelMacchiato;
     default:
       break;
   }

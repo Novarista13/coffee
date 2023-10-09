@@ -44,6 +44,11 @@ export const recipesResultSwitch = (recipes) => {
                   return ["Spanish Latte"];
               }
 
+            case recipes.includes("Irish whiskey") &&
+              recipes.includes("Sugar") &&
+              recipes.includes("Whipped Cream"):
+              return ["Irish Coffee"];
+
             case recipes.includes("Sugar"):
               return ["Turkish Coffee", "Café Cubano"];
 
@@ -62,11 +67,6 @@ export const recipesResultSwitch = (recipes) => {
             case recipes.includes("Mate"):
               return ["Espresso Mate-tini", "Breve Coffee"];
 
-            case recipes.includes("Irish whiskey") &&
-              recipes.includes("Sugar") &&
-              recipes.includes("Whipped Cream"):
-              return ["Irish Coffee"];
-
             default:
               return ["Espresso", "Ristretto", "Red Eye"];
           }
@@ -74,7 +74,7 @@ export const recipesResultSwitch = (recipes) => {
         case recipes.includes("Cold Brew"):
           switch (true) {
             case recipes.includes("Cold Brew") && recipes.includes("Ice"):
-              return ["Ice Coffee"];
+              return ["Iced Coffee"];
 
             default:
               return ["Cold Brew Coffee"];
