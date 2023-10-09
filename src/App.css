@@ -137,7 +137,7 @@
 
 .about-hero-text {
   position: absolute;
-  top: 48%;
+  top: 45%;
   left: 5%;
   padding: 0 10px;
   padding-right: 40px !important;
@@ -145,6 +145,12 @@
   font-style: normal;
   font-weight: 500;
   text-align: left;
+}
+
+@media (max-width: 834px) {
+  .about-hero-text {
+    top: 30%;
+  }
 }
 
 @media (max-width: 576px) {
