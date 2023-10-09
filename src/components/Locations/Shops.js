@@ -21,7 +21,7 @@ export default function Shops() {
                   src={shopImage(shop)}
                   alt={shop}
                   width={170}
-                  height={200}
+                  height={100}
                 />
                 <p style={{ marginBottom: 10 }}>{shop}</p>
                 <Link to="/locations/shop" aria-label="Single Project">

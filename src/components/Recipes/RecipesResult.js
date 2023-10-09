@@ -1,11 +1,12 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
+import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 import { useContext } from "react";
 import { RecipesContext } from "../../Contexts/RecipesContext";
-import { RecipesResultSwitch } from "../../data/recipes/RecipesResultSwitch";
+import { recipesResultSwitch } from "../../data/recipes/RecipesResultSwitch";
+import { recipesImage } from "../../data/recipes/recipesImage";
 
 export default function RecipesResult() {
   const { recipesMaterial } = useContext(RecipesContext);
@@ -16,25 +17,31 @@ export default function RecipesResult() {
       <Container>
         <div className="recipes-result-title">
           <h2>Your Results</h2>
-          <h5>Your Items: {recipesMaterial.join(", ")}</h5>
+          <h5>
+            Your Items:{" "}
+            <span style={{ fontSize: "16px" }}>
+              {recipesMaterial.join(", ")}
+            </span>
+          </h5>
         </div>
 
         <Row>
-          {RecipesResultSwitch(recipesMaterial).map((items, id) =>
+          {recipesResultSwitch(recipesMaterial).map((items, id) =>
             items ? (
-              // <Col lg={4} md={6} className="recipes-result-col" key={id}>
-              //   <div className="recipes-result-image">
-              //     <img
-              //       className="items-image"
-              //       src={productsImage(items)}
-              //       alt={items}
-              //       width={150}
-              //       height={150}
-              //     />
-              <h5 key={id}>{items}</h5>
+              <Col lg={4} sm={6} className="recipes-result-col" key={id}>
+                <div className="recipes-result-image">
+                  <img
+                    className="items-image"
+                    style={{ borderRadius: "25px" }}
+                    src={recipesImage(items)}
+                    alt={items}
+                    width={200}
+                    height={250}
+                  />
+                  <h5 key={id}>{items}</h5>
+                </div>
+              </Col>
             ) : (
-              //   </div>
-              // </Col>
               <h5 key={id} className="mt-5">
                 {" "}
                 You can't make a drink only with these things.

@@ -37,8 +37,8 @@ export default function Featured() {
                   className="shop-image"
                   src={shopImage(shop)}
                   alt={shop}
-                  width={150}
-                  height={150}
+                  width={200}
+                  height={100}
                 />
                 <p>{shop}</p>
               </div>
@@ -60,9 +60,10 @@ export default function Featured() {
                 <img
                   className="products-image"
                   src={productsImage(products)}
+                  style={{borderRadius: "25px"}}
                   alt={products}
-                  width={150}
-                  height={150}
+                  width={200}
+                  height={250}
                 />
                 <p>{products}</p>
               </div>

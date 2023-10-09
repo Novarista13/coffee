@@ -1,4 +1,4 @@
-export const RecipesResultSwitch = (recipes) => {
+export const recipesResultSwitch = (recipes) => {
   switch (true) {
     // First machine test
     case recipes.includes("Espresso machine") ||
@@ -17,9 +17,11 @@ export const RecipesResultSwitch = (recipes) => {
                 // Others test
                 case recipes.includes("Chocolate") ||
                   recipes.includes("Mocha sauce"):
-                  return ["Mocha"];
+                  return ["Mocha", "Macchiato", "Cafe Cortado"];
                 case recipes.includes("Ice"):
                   return ["Iced Coffee"];
+                case recipes.includes("Ice Cream"):
+                  return ["Affogato"];
                 case recipes.includes("Caramel syrup"):
                   return ["Caramel Macchiato"];
 

@@ -10,7 +10,7 @@ export const productsData = [
   "Tiramisu Latte",
   "Gingerbread Latte",
   "Matcha Latte",
-  "Cinnamon Latte",
+  "Cinnamon Cappuccino",
   "Caramelized Latte",
   "Cherry Blossom Latte",
   "Honey Latte",
@@ -18,4 +18,5 @@ export const productsData = [
   "Vanilla Frappuccino",
   "Mocha Frappuccino",
   "S'mores Frappuccino",
+  "Rainbow Mocha",
 ];

@@ -8,7 +8,7 @@ export const shopInfo = (shop) => {
         vibe: ["Enchanted", "Whimsical", "Cozy"],
         location: "123 Main Street, Enchantedville",
         hours: " 7:00 AM - 5:00 PM (Mon-Sat)",
-        popularItems: ["Fairy Dust Latte", "Enchanted Forest Salad"],
+        popularItems: ["Salted Mocha", "Toasted Coffee", "Coconut Brew"],
       };
     case "java jive cafe":
       return {
@@ -17,7 +17,7 @@ export const shopInfo = (shop) => {
         vibe: ["Dreamy", "Colorful", "Eclectic"],
         location: "456 Fantasy Avenue, Dreamland",
         hours: "8:00 AM - 6:00 PM (Tue-Sun)",
-        popularItems: ["Unicorn Mocha", "Dragonfruit Smoothie Bowl"],
+        popularItems: ["Raspberry Mocha", "Iced Macchiato", "Irish Cold Brew"],
       };
     case "caffeine oasis":
       return {
@@ -26,7 +26,7 @@ export const shopInfo = (shop) => {
         vibe: ["Mystical", "Tranquil", "Artistic"],
         location: " 789 Wonderland Boulevard, Mystica",
         hours: "6:30 AM - 4:30 PM (Mon-Fri)",
-        popularItems: ["Magic Elixir Espresso", "Gnome's Garden Quiche"],
+        popularItems: ["Hazelnut Brew", "Coconut Brew", "Matcha Latte"],
       };
     case "espresso delights":
       return {
@@ -35,7 +35,11 @@ export const shopInfo = (shop) => {
         vibe: ["Sky-High", "Contemporary", "Relaxing"],
         location: "101 Cloud Street, Skytopia",
         hours: "7:00 AM - 3:00 PM (Wed-Mon)",
-        popularItems: ["Nimbus Cappuccino", "Celestial Croissant"],
+        popularItems: [
+          "Cascara Brew",
+          "Irish Cold Brew",
+          "Vanilla Frappuccino",
+        ],
       };
     case "mocha muse":
       return {
@@ -44,7 +48,7 @@ export const shopInfo = (shop) => {
         vibe: [" Magical", "Lively", "Charming"],
         location: " 234 Whimsy Lane, Fairyland",
         hours: "9:00 AM - 7:00 PM (Thu-Tue)",
-        popularItems: ["Pixie Potion Cold Brew", "Enchanted Berry Pie"],
+        popularItems: ["Tiramisu Latte", "Gingerbread Latte", "Cinnamon Latte"],
       };
     case "bean bliss bistro":
       return {
@@ -53,7 +57,11 @@ export const shopInfo = (shop) => {
         vibe: [" Mythical", "Rustic", "Inspirational"],
         location: "890 Dreamers' Avenue, Fantasia",
         hours: "7:30 AM - 4:30 PM (Mon-Sat)",
-        popularItems: ["Unicorn Macchiato", "Magic Spell Donuts"],
+        popularItems: [
+          "Matcha Latte",
+          "Cinnamon Latte",
+          "Cherry Blossom Latte",
+        ],
       };
     case "the roasted mug":
       return {
@@ -62,16 +70,20 @@ export const shopInfo = (shop) => {
         vibe: ["Fantastical", "Playful", "Retro"],
         location: "123 Galaxy Lane, Stardust City",
         hours: "6:00 AM - 6:00 PM (Mon-Sun)",
-        popularItems: ["Stardust Latte", "Cosmic Crepe"],
+        popularItems: [
+          "Caramelized Latte",
+          "Cherry Blossom Latte",
+          "Tiramisu Latte",
+        ],
       };
     case "perk & sip coffee co.":
       return {
         description:
           "Perk up your day and sip your worries away at Perk & Sip Coffee Co. Our cozy cafe is a haven for those seeking a moment of respite. With a commitment to brewing the perfect cup of coffee every time, we ensure that each visit leaves you refreshed and recharged.",
-        vibe: ["Cosmic", "Futuristic", "Energizing"], 
+        vibe: ["Cosmic", "Futuristic", "Energizing"],
         location: "456 Rainbow Road, Colorville",
         hours: "8:00 AM - 3:00 PM (Wed-Mon)",
-        popularItems: ["Rainbow Mocha", "Colorful Fruit Parfait"],
+        popularItems: ["Honey Latte", "Brown Espresso", "Caramelized Latte"],
       };
     case "steamy cuppa cafe":
       return {
@@ -80,7 +92,11 @@ export const shopInfo = (shop) => {
         vibe: [" Vibrant", "Creative", "Bohemian"],
         location: "789 Wonderland Avenue, Wonderland",
         hours: "7:00 AM - 5:00 PM (Mon-Fri)",
-        popularItems: ["Mad Hatter's Tea Latte", "Wonderland Waffles"],
+        popularItems: [
+          "Vanilla Frappuccino",
+          "Mocha Frappuccino",
+          "Coconut Brew",
+        ],
       };
     case "urban grindhouse":
       return {
@@ -89,7 +105,7 @@ export const shopInfo = (shop) => {
         vibe: ["Whimsical", "Quirky", "Nostalgic"],
         location: "101 Fairy Lane, Enchanted Forest",
         hours: "9:00 AM - 6:00 PM (Tue-Sun)",
-        popularItems: ["Enchanted Elixir Espresso", "Fairy Ring Bagel"],
+        popularItems: ["S'mores Frappuccino", "Rainbow Mocha", "Cascara Brew"],
       };
     case "frothy fix cafe":
       return {
@@ -98,7 +114,7 @@ export const shopInfo = (shop) => {
         vibe: ["Enchanted", "Natural", "Cozy"],
         location: "234 Magic Avenue, Magicville",
         hours: "7:30 AM - 4:30 PM (Mon-Sat)",
-        popularItems: ["Magic Potion Latte", "Sorcerer's Scone"],
+        popularItems: ["Salted Mocha", "Toasted Coffee", "Rainbow Mocha"],
       };
     case "morning zest java":
       return {
@@ -107,7 +123,7 @@ export const shopInfo = (shop) => {
         vibe: ["Magical", "Enigmatic", "Artistic"],
         location: "567 Fantasy Lane, Dreamland",
         hours: "8:00 AM - 7:00 PM (Tue-Sun)",
-        popularItems: ["Dreamer's Delight Mocha", "Fantasy Fruit Salad"],
+        popularItems: ["Cascara Brew", "Irish Cold Brew", "Rainbow Mocha"],
       };
     case "cup & cozy":
       return {
@@ -116,7 +132,11 @@ export const shopInfo = (shop) => {
         vibe: ["Fantastical", "Imaginative", "Eclectic"],
         location: "890 Wizardry Road, Mystica",
         hours: "7:00 AM - 5:00 PM (Mon-Fri)",
-        popularItems: ["Wizard's Brew Coffee", "Spellbound Sandwich"],
+        popularItems: [
+          "Vanilla Frappuccino",
+          "Mocha Frappuccino",
+          "Brown Espresso",
+        ],
       };
     case "the grindstone cafe":
       return {
@@ -125,7 +145,11 @@ export const shopInfo = (shop) => {
         vibe: ["Mystical", "Serene", "Inspiring"],
         location: "123 Starry Street, Starlight City",
         hours: "6:30 AM - 4:30 PM (Wed-Mon)",
-        popularItems: ["Starry Night Latte", "Celestial Croissant"],
+        popularItems: [
+          "Caramelized Latte",
+          "Cherry Blossom Latte",
+          "Honey Latte",
+        ],
       };
     case "aroma avenue":
       return {
@@ -134,7 +158,7 @@ export const shopInfo = (shop) => {
         vibe: ["Starry", "Elegant", "Romantic"],
         location: "456 Enchantment Lane, Enchantville",
         hours: "9:00 AM - 6:00 PM (Thu-Tue)",
-        popularItems: ["Enchantment Espresso", "Enchanted Berry Parfait"],
+        popularItems: ["Tiramisu Latte", "Gingerbread Latte", "Brown Espresso"],
       };
     case "beanstalk brews":
       return {
@@ -143,16 +167,20 @@ export const shopInfo = (shop) => {
         vibe: ["Enchanting", "Bohemian", "Welcoming"],
         location: "789 Fantasy Road, Fantasyland",
         hours: "10:00 AM - 8:00 PM (Tue-Sun)",
-        popularItems: ["Fantasy Frappe", "Unicorn Waffles"],
+        popularItems: ["Hazelnut Brew", "Coconut Brew", "S'mores Frappuccino"],
       };
     case "latte lounge":
       return {
         description:
           "Find comfort in the corner with our frothy lattes and welcoming ambiance at Latte Lounge. Our cafe is a haven for those who appreciate the art of lattes, where every cup is a creamy masterpiece. ",
-        vibe: [" Fantasy", "Playful", "Lively"], 
+        vibe: [" Fantasy", "Playful", "Lively"],
         location: "101 Whimsical Avenue, Whimsyville",
         hours: "7:30 AM - 4:30 PM (Mon-Sat)",
-        popularItems: ["Whimsical Cappuccino", "Whimsy Quiche"],
+        popularItems: [
+          "Raspberry Mocha",
+          "Iced Macchiato",
+          "Cherry Blossom Latte",
+        ],
       };
     case "daily grind cafe":
       return {
@@ -161,7 +189,7 @@ export const shopInfo = (shop) => {
         vibe: ["Whimsical", "Artsy", "Cozy"],
         location: "234 Mystical Lane, Mythical City",
         hours: "6:00 AM - 6:00 PM (Mon-Sun)",
-        popularItems: ["Mythical Mocha", "Dragon's Breath Crepe"],
+        popularItems: ["Honey Latte", "Brown Espresso", "Gingerbread Latte"],
       };
     case "creamy canvas coffee":
       return {
@@ -170,7 +198,11 @@ export const shopInfo = (shop) => {
         vibe: [" Mythical", "Mysterious", "Relaxing"],
         location: "567 Wonderland Boulevard, Wonderopolis",
         hours: "8:00 AM - 3:00 PM (Wed-Mon)",
-        popularItems: ["Wonderland Whirl Latte", "Tea Party Scones"],
+        popularItems: [
+          "S'mores Frappuccino",
+          "Rainbow Mocha",
+          "Raspberry Mocha",
+        ],
       };
     case "cappuccino corner":
       return {
@@ -179,7 +211,7 @@ export const shopInfo = (shop) => {
         vibe: ["Wonderland", "Playful", "Enchanted"],
         location: "567 Mystic Road, Mythica",
         hours: "10:00 AM - 8:00 PM (Tue-Sun)",
-        popularItems: ["Sorcerer's Brew", "Mythical Omelette"],
+        popularItems: ["Matcha Latte", "Cinnamon Latte", "Tiramisu Latte"],
       };
     default:
       break;

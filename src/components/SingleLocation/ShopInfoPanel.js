@@ -2,9 +2,7 @@ import { shopInfo } from "../../data/shops/shopInfo";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import arrowLeft from "../../images/shops/arrow-left.svg";
-// import { productsImage } from "../../data/products/productsImage";
-import { HashLink } from "react-router-hash-link";
+import { productsImage } from "../../data/products/productsImage";
 import { useContext } from "react";
 import { SingleShopContext } from "../../Contexts/SingleShopContext";
 
@@ -39,23 +37,15 @@ export default function ShopInfoPanel() {
           <Row>
             {shopInfo(shop).popularItems.map((items, id) => (
               <Col key={id}>
-                {/* <img
+                <img
                   className="popular-item-image"
+                  style={{ borderRadius: "25px" }}
                   src={productsImage(items)}
                   alt={items}
-                  width={150}
-                  height={100}
-                /> */}
+                  width={200}
+                  height={250}
+                />
                 <p>{items}</p>
-
-                <HashLink to="#shops">
-                  <img
-                    width={45}
-                    className="arrow-down"
-                    src={arrowLeft}
-                    alt="arrow-down"
-                  />
-                </HashLink>
               </Col>
             ))}
           </Row>

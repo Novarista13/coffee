@@ -22,7 +22,7 @@ export default function Footer() {
           Corner <br />
           Co
         </Col>
-        <Col lg={3} sm={4} xs={6} className="footer-links">
+        <Col lg={3} sm={4} xs={6} className="footer-links mt-2">
           <Link className="footer-links" to="/home">
             Home
           </Link>
@@ -39,8 +39,35 @@ export default function Footer() {
             Recipes
           </Link>
         </Col>
-        <Col lg={3} sm={12} xs={6} className="footer-note mt-lg-5">
+        <Col lg={3} sm={12} xs={6} className="footer-note mt-lg-3">
           <div className="footer-note-text">
+            <div className="my-2">
+              pics and svgs are from{" "}
+              <span
+                style={{ color: "#e6b678", cursor: "pointer" }}
+                onClick={() => {
+                  window.open("https://unsplash.com/");
+                }}
+              >
+                unsplash,{" "}
+              </span>
+              <span
+                style={{ color: "#e6b678", cursor: "pointer" }}
+                onClick={() => {
+                  window.open("https://www.svgrepo.com/");
+                }}
+              >
+                svgRepo,{" "}
+              </span>
+              <span
+                style={{ color: "#e6b678", cursor: "pointer" }}
+                onClick={() => {
+                  window.open("https://shottbeverages.com/recipes");
+                }}
+              >
+                shott.{" "}
+              </span>
+            </div>
             This Website was coded by{" "}
             <span
               style={{ color: "#e6b678", cursor: "pointer" }}
@@ -48,7 +75,7 @@ export default function Footer() {
                 window.open("https://github.com/Novarista13");
               }}
             >
-              Novarista
+              Novarista.
             </span>
           </div>
         </Col>
